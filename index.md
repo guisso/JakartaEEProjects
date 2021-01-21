@@ -1,5 +1,7 @@
 ## Welcome to my Jakarta Enterprise Edition Projects Blog
 
+![](imgs/jakarta_ee_logo_schooner_color_stacked_default_001.png)
+
 Hi!
 
 Here I will try to elaborate tutorials for learning and teaching the Jakarta&reg; EE.
