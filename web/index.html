@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakarta Enterprise Edition: Servlets</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1,
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .exercise {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+
+        pre {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            header {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Jakarta Enterprise Edition: Servlets</h1>
+        <p>Orientações para realização de exercícios práticos sobre páginas HTML que submetem dados para servlets
+            processarem e apresentarem resultados.</p>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Introdução</h2>
+            <p>Estes exercícios visam praticar a comunição de dados entre clientes e servlets Jakarta EE, os
+                quais processam as requisições (GET ou POST) e exibem os resultados capturados.</p>
+
+            <h3>Instruções</h3>
+            <ul>
+                <li>Serão produzidos 3 servlets que devem ter suporte de classes externas para processamento de dados
+                    relevantes;</li>
+                <li>Os servlets podem ser configurados da maneira que julgar adequada;</li>
+                <li>A página principal de seu sistema (index.html) deve conter links para as páginas internas que
+                    manterão formulários para sumbmissão de dados;</li>
+                <li>Os links deverão ter nomes "Aplicação 1", "Aplicação 2" e "Aplicação 3";</li>
+                <li>A página correspondente à "Aplicação 1" deve ter nome "applicacao1.html" e assim por diante até a
+                    "Aplicação 3";</li>
+                <li>A organização hierárquica (diretórios) e a apresentação (CSS) das páginas é livre.</li>
+                <li>Tempo estimado para execução: 4 horas.</li>
+            </ul>
+        </section>
+
+        <section class="exercise">
+            <h2>Exercício 1: Calculadora</h2>
+
+            <p>Crie uma página HTML com um formulário para envio de dois números via método <code>GET</code> para um
+                servlet. O servlet deve capturar os parâmetros da requisição e exibir uma mensagem com os resultados das
+                quatro operações aritméticas básicas entre estes números.</p>
+
+            <p>Esteja atento para o fato de que quaisquer valores podem ser inseridos pelo usuário do sistema e seu
+                programa deve tratar possíveis execeções, tais como colocar uma frase qualquer em vez de um número no
+                capo adequado ou mesmo enviar os dados vazios.</p>
+
+            <p>A classe <code>Calculadora</code> implementará as regras de negócio da aplicação, ou seja, receberá os
+                dados e
+                fornecerá resultados mediante métodos próprios.</p>
+        </section>
+
+        <section class="exercise">
+            <h2>Exercício 2: Distância entre pontos</h2>
+
+            <p>Crie uma página HTML com um formulário para envio das coordenadas de dois pontos no plano cartesiano via
+                método <code>POST</code> para um
+                servlet. O servlet deve capturar os parâmetros da requisição e exibir uma mensagem informando a
+                distância entre tais pontos.</p>
+
+            <p>Esteja atento para o fato de que quaisquer valores podem ser inseridos pelo usuário do sistema e seu
+                programa deve tratar possíveis execeções, tais como colocar uma frase qualquer em vez de um número no
+                capo adequado ou mesmo enviar os dados vazios.</p>
+
+            <p>A classe <code>Ponto</code> implementará as regras de negócio da aplicação, ou seja, receberá os
+                dados e
+                fornecerá resultados mediante métodos próprios.</p>
+        </section>
+
+        <section class="exercise">
+            <h2>Exercício 3: Livre</h2>
+
+            <p>Exercite sua criatividade apresentando a solução para um problema interessante que requeira o envio e o
+                tratamento de dados.</p>
+        </section>
+    </main>
+
+    <footer>
+        Luis Guisso &copy; 2025
+    </footer>
+</body>
+
+</html>
